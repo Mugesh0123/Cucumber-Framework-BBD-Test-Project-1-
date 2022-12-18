@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 import test.baseclass.BaseClass;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\muges\\eclipse-workspace\\test\\src\\test\\resources\\featureFile\\EndToEndTest.feature",
+@CucumberOptions(features = "C:\\Users\\muges\\eclipse-workspace\\test\\src\\test\\resources\\featureFile\\LoginGeekyMart.feature",
            glue = {"test.stepdefinition","test.hooks"},
            dryRun = false,
            monochrome = true,
