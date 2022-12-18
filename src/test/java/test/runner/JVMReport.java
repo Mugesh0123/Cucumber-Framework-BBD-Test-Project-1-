@@ -13,8 +13,8 @@ import net.masterthought.cucumber.ReportBuilder;
 public class JVMReport {
 	
 	public static void jvmreport(String json) {
-		File file = new File("C:\\Users\\muges\\eclipse-workspace\\test\\testResult\\jvm");
-		Configuration config = new Configuration(file,"jvmreport");		
+		File file = new File("C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\jvm-report");
+		Configuration config = new Configuration(file,"jvmreports");		
 		config.addClassifications("name", "mugesh");
 		List<String> list = new ArrayList<String>();
 		list.add(json);

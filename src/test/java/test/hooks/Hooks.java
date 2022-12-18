@@ -14,7 +14,7 @@ public class Hooks extends RunnerClass {
 	
 	@After
 	public void setDown() {
-		jvmReportGeneration();
+		//jvmReportGeneration();
 		driver.close();
 	}
 
