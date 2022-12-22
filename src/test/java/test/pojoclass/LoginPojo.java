@@ -21,6 +21,10 @@ public class LoginPojo extends BaseClass{
 	@FindBy(xpath ="//input[@type='submit']")
 	private WebElement login;
 	
+	
+	@FindBy(xpath ="(//span[contains(text(),'Home')])[3]")
+	private WebElement  homebutton;
+	
 	public WebElement getUserName() {
 		return userName;
 	}
@@ -30,6 +34,9 @@ public class LoginPojo extends BaseClass{
 
 	public WebElement getLogin() {
 		return login;
+	}
+	public WebElement getHomebutton() {
+		return homebutton;
 	}
 	
 	

@@ -1,4 +1,4 @@
-@sanity
+@regression
 Feature: To test login geeky mart functionality
  
 
