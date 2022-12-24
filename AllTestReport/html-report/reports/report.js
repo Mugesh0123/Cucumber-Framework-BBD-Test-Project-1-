@@ -1,63 +1,65 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/C:/Users/muges/eclipse-workspace/test/src/test/resources/featureFile/LoginGeekyMart.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/C:/Users/muges/eclipse-workspace/test/src/test/resources/featureFile/homebuttonclick.feature");
 formatter.feature({
-  "name": "To test login geeky mart functionality",
+  "name": "To test geeky mart home button functionality",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@smoke"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "user have to login geeky mart",
+  "name": "user have to login geeky mart click home button",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
-    },
-    {
-      "name": "@smoke"
+      "name": "@regression"
     }
   ]
 });
 formatter.step({
-  "name": "user should be in login page \"https://www.geekymart.com/index.php?route\u003daccount/login\"",
+  "name": "user  login page \"https://www.geekymart.com/index.php?route\u003daccount/login\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "StepDefinition.user_should_be_in_login_page(String)"
+  "location": "HomeButton.user_login_page(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user have to enter username \"mugeshmugesh35@gmail.com\"",
+  "name": "user  enter username \"mugeshmugesh35@gmail.com\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "StepDefinition.user_have_to_enter_username(String)"
+  "location": "HomeButton.user_enter_username(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user have to enter password \"Mugesh@143\"",
+  "name": "user  enter password \"Mugesh@143\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinition.user_have_to_enter_password(String)"
+  "location": "HomeButton.user_enter_password(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should be in home page \"Logout\"",
+  "name": "user  in home page \"Logout\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinition.user_should_be_in_home_page(String)"
+  "location": "HomeButton.user_in_home_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click home button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "HomeButton.user_click_home_button()"
 });
 formatter.result({
   "status": "passed"
