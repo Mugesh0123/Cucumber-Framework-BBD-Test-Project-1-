@@ -27,6 +27,8 @@ public class StepFunction extends LoginPojo{
 		LoginPojo my =new LoginPojo();
 		 fillTheTextBox(my.getPassWord(), string);
 		 buttonClick(my.getLogin());
+			System.out.println("hi");
+
 	}
 
 	@Then("user get in to  home page {string}")

@@ -23,6 +23,9 @@ public class SelectByCategoryTestCase extends SelectByCategoryPojoClass{
 	public void user_have_to_enter_vaild_usernames(String string) {
 		SelectByCategoryPojoClass myObj =new SelectByCategoryPojoClass();
 		fillTheTextBox(myObj.getUserName(), string);
+		
+		System.out.println("hi");
+
 	}
 
 	@And("user have to enter vaild passwords {string}")
@@ -30,6 +33,8 @@ public class SelectByCategoryTestCase extends SelectByCategoryPojoClass{
 		SelectByCategoryPojoClass myObj1 =new SelectByCategoryPojoClass();
 		fillTheTextBox(myObj1.getPassWord(), string); 
 		buttonClick(myObj1.getLogin());
+		System.out.println("hi");
+
 	}
 
 	@And("user have to hover Shop By Categories option")

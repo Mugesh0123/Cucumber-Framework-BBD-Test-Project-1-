@@ -31,6 +31,8 @@ public class EndToEndTest extends BaseClass{
 		EndToEndTestPojo my1 = new EndToEndTestPojo();
 		fillTheTextBox(my1.getPassWord(), string); 
 		buttonClick(my1.getLogin());
+		System.out.println("hi");
+
 	}
 	@And("user have to click all category and choose the product")
 	public void user_have_to_click_all_category_and_choose_the_product() {
