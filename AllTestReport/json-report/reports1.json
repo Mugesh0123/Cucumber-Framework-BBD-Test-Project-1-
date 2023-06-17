@@ -1,113 +1,113 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-12-21T14:23:25.497Z",
-        "line": 4,
-        "name": "user have to login geeky mart click home button",
+        "start_timestamp": "2023-06-17T04:48:44.427Z",
+        "line": 6,
+        "name": "user have to login geeky mart",
         "description": "",
-        "id": "to-test-geeky-mart-home-button-functionality;user-have-to-login-geeky-mart-click-home-button",
+        "id": "to-test-login-geeky-mart-functionality;user-have-to-login-geeky-mart",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 40565943700,
+              "duration": 5067683400,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user  login page \"https://www.geekymart.com/index.php?route\u003daccount/login\"",
+            "line": 7,
+            "name": "user should be in login page \"https://www.geekymart.com/index.php?route\u003daccount/login\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"https://www.geekymart.com/index.php?route\u003daccount/login\"",
-                  "offset": 17
+                  "offset": 29
                 }
               ],
-              "location": "HomeButton.user_login_page(String)"
+              "location": "StepDefinition.user_should_be_in_login_page(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4009135600,
+              "duration": 148050400,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user  enter username \"mugeshmugesh35@gmail.com\"",
+            "line": 8,
+            "name": "user have to enter username \"mugeshmugesh35@gmail.com\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"mugeshmugesh35@gmail.com\"",
-                  "offset": 21
+                  "offset": 28
                 }
               ],
-              "location": "HomeButton.user_enter_username(String)"
+              "location": "StepDefinition.user_have_to_enter_username(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7974080800,
+              "duration": 700935900,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user  enter password \"Mugesh@143\"",
+            "line": 9,
+            "name": "user have to enter password \"Mugesh@143\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Mugesh@143\"",
-                  "offset": 21
+                  "offset": 28
                 }
               ],
-              "location": "HomeButton.user_enter_password(String)"
+              "location": "StepDefinition.user_have_to_enter_password(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 183612400,
+              "duration": 3169980300,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user  in home page \"Logout\"",
+            "line": 10,
+            "name": "user should be in home page \"Logout\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Logout\"",
-                  "offset": 19
+                  "offset": 28
                 }
               ],
-              "location": "HomeButton.user_in_home_page(String)"
+              "location": "StepDefinition.user_should_be_in_home_page(String)"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 17831310200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click home button",
-            "match": {
-              "location": "HomeButton.user_click_home_button()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@regression"
+            "name": "@smoke"
+          },
+          {
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "To test geeky mart home button functionality",
+    "name": "To test login geeky mart functionality",
     "description": "",
-    "id": "to-test-geeky-mart-home-button-functionality",
+    "id": "to-test-login-geeky-mart-functionality",
     "keyword": "Feature",
-    "uri": "file:/C:/Users/muges/eclipse-workspace/test/src/test/resources/featureFile/homebuttonclick.feature",
-    "tags": []
+    "uri": "file:/C:/Users/amala/eclipse/Cucumber-Framework-BBD-Test-Project-1-/src/test/resources/featureFile/LoginGeekyMart.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

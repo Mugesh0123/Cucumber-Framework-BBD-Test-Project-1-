@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="70.718363">
-    <testcase classname="To test geeky mart home button functionality" name="user have to login geeky mart click home button" time="70.718363">
-        <system-out><![CDATA[Given user  login page "https://www.geekymart.com/index.php?route=account/login".passed
-When user  enter username "mugeshmugesh35@gmail.com"........................passed
-And user  enter password "Mugesh@143".......................................passed
-Then user  in home page "Logout"............................................passed
-And user click home button..................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.128933">
+    <testcase classname="To test login geeky mart functionality" name="user have to login geeky mart" time="9.128933">
+        <system-out><![CDATA[Given user should be in login page "https://www.geekymart.com/index.php?route=account/login".passed
+When user have to enter username "mugeshmugesh35@gmail.com".................passed
+And user have to enter password "Mugesh@143"................................passed
+Then user should be in home page "Logout"...................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
