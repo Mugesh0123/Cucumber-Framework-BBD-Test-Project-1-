@@ -9,12 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 import test.baseclass.BaseClass;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\ramdh\\Downloads\\Cucumber-Framework-BBD-Test-Project-1-\\src\\test\\resources\\featureFile\\LoginGeekyMart.feature",
+@CucumberOptions(features = "C:\\Users\\ramdh\\Downloads\\Cucumber-Framework-BBD-Test-Project-1-\\src\\test\\resources\\featureFile",
            glue = {"test.stepdefinition"},
-           //dryRun = true,
+          // dryRun = true,
            monochrome = true,
-          strict=true
-//           tags = "@regression",
+          strict=true,
+           tags = "@class1"
 //           plugin = {
 //           "html:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\html-report\\reports",
 //      	  "json:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\json-report\\reports1.json",
