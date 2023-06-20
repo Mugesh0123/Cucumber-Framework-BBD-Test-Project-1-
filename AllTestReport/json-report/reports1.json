@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2023-06-17T04:48:44.427Z",
+        "start_timestamp": "2023-06-17T13:59:11.594Z",
         "line": 6,
         "name": "user have to login geeky mart",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5067683400,
+              "duration": 5490483100,
               "status": "passed"
             },
             "line": 7,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 148050400,
+              "duration": 124513000,
               "status": "passed"
             },
             "line": 8,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 700935900,
+              "duration": 775305000,
               "status": "passed"
             },
             "line": 9,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 3169980300,
+              "duration": 3181519400,
               "status": "passed"
             },
             "line": 10,
