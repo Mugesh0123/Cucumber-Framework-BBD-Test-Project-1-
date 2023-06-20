@@ -19,12 +19,6 @@ public class StepDefinition extends LoginPojo {
 		lanchBrowser();
 	   url(string);
 
-		try {
-			Thread.sleep(30000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 	@When("user have to enter username {string}")
@@ -32,14 +26,6 @@ public class StepDefinition extends LoginPojo {
 		LoginPojo my =new LoginPojo();
 		 fillTheTextBox(my.getUserName(), string);
 
-			try {
-				Thread.sleep(30000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		 
-			System.out.println("hi");
 
 	}
 
@@ -48,24 +34,14 @@ public class StepDefinition extends LoginPojo {
 		LoginPojo my =new LoginPojo();
 		 fillTheTextBox(my.getPassWord(), string);
 
-			try {
-				Thread.sleep(30000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			
 		 buttonClick(my.getLogin());
 	}
 
 	@Then("user should be in home page {string}")
 	public void user_should_be_in_home_page(String string) {
 
-		try {
-			Thread.sleep(30000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		String text = driver.findElement(By.linkText("Logout")).getText();
 	   Assert.assertEquals(text, string);
 	}
