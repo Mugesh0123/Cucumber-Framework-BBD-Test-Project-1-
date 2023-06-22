@@ -9,21 +9,21 @@ import io.cucumber.junit.CucumberOptions;
 import test.baseclass.BaseClass;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\ramdh\\Downloads\\Cucumber-Framework-BBD-Test-Project-1-\\src\\test\\resources\\featureFile\\LoginGeekyMart.feature",
-           glue = {"test.stepdefinition"},
-           //dryRun = true,
-           monochrome = true,
-          strict=true
-//           tags = "@regression",
+@CucumberOptions(features = "C:\\Users\\ramdh\\Downloads\\Cucumber-Framework-BBD-Test-Project-1-\\src\\test\\resources\\featureFile", 
+    glue = {"test.stepdefinition","test.hooks" },
+		// dryRun = true,
+		strict = true,
+		monochrome = true,		
+        tags = "@login"
 //           plugin = {
 //           "html:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\html-report\\reports",
-//      	  "json:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\json-report\\reports1.json",
-//    	   "junit:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\junit-report\\reports2.xml",
-//    	   "rerun:C:\\Users\\muges\\eclipse-workspace\\test\\src\\test\\resources\\rerun\\rerun.txt"     	   
+//      	 "json:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\json-report\\reports1.json",
+//    	     "junit:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\junit-report\\reports2.xml",
+//    	     "rerun:C:\\Users\\muges\\eclipse-workspace\\test\\src\\test\\resources\\rerun\\rerun.txt"     	   
 //           } 
-          
-		)
-public class RunnerClass extends BaseClass {	
+
+)
+public class RunnerClass extends BaseClass {
 //	@AfterClass
 //   public static void jvmReportGeneration() {
 //	   JVMReport.jvmreport("C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\json-report\\reports1.json");
