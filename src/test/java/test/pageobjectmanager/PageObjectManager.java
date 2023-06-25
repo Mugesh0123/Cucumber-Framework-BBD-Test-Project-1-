@@ -18,6 +18,7 @@ public class PageObjectManager {
 	public static SearchProductElement getInstanceSearchProduct() {
 		return (searchProduct == null) ? searchProduct = new SearchProductElement() : searchProduct;
 	} 
+	
 	public static HomePagepojo getInstancebookspage() {
 		return (bookspage == null) ? bookspage = new HomePagepojo() : bookspage;
 		
