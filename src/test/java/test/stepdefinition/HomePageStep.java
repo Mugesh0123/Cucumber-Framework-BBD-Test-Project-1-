@@ -16,6 +16,7 @@ public class HomePageStep extends HomePagepojo {
 
 	}
 
+	
 	@Then("validated page title {string}")
 	public void validated_page_title(String expectedTitle) {
 		String homePageTitle = driver.getTitle();

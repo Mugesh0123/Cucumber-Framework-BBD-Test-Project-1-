@@ -4,6 +4,7 @@ import test.pojoclass.HomePagepojo;
 import test.pojoclass.LoginPojo;
 import test.pojoclass.SearchProductElement;
 
+
 public class PageObjectManager {
 
 	private static LoginPojo login;
