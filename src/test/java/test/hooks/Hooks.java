@@ -32,7 +32,7 @@ public class Hooks extends BaseClass {
 			byte[] photo = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			scenario.embed(photo, "image/png","error_image");		
 		}
-		driver.close();
+		
 		}
 
 }
