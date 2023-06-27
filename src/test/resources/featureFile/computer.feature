@@ -1,8 +1,7 @@
 @com @notebook
 Feature: computer module feature
   
-
-  @com @notebook
+    @com @notebook
   Scenario: Testing the computer modules
     Given user have click the computer
     And user have  click the notebooks
@@ -11,7 +10,6 @@ Feature: computer module feature
     Then user select  the shopping card button
     And user have click the terms of shopping
     And  user click the checkout button
-    #And user click the dropdown 
     And user click the billing continue
     And user have click the shipping continue
     Then user have click the ground button
@@ -20,10 +18,3 @@ Feature: computer module feature
     And user have click the delivery continue
     Then user have click the userfinal
     
- 
-    
-    
-    
-   
-
-  
