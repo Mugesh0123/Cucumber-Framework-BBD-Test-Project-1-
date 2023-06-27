@@ -26,6 +26,7 @@ public class Hooks extends BaseClass {
 		}	
 	}
 	
+
 //	@AfterStep
 //	public void failureScreenshot(Scenario scenario) {
 //		if(scenario.isFailed())	{
@@ -34,5 +35,6 @@ public class Hooks extends BaseClass {
 //		}
 //		driver.close();
 //		}
+
 
 }
