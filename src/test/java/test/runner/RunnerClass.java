@@ -9,10 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 import test.baseclass.BaseClass;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\amala\\eclipse\\Cucumber-Framework-BBD-Test-Project-1-\\src\\test\\resources\\featureFile", 
+
+@CucumberOptions(features = "C:\\Users\\subab\\Downloads\\selenium-java-4.9.1\\lib\\git\\Cucumber-Framework-BBD-Test-Project-1-\\src\\test\\resources\\featureFile\\homepage.feature", 
     glue = {"test.stepdefinition","test.hooks" },
-//dryRun = true,
-strict = true,
+	 //dryRun = true,
+	strict = true,
+
 		monochrome = true,		
         tags = "@notebook or @com"
 //           plugin = {
