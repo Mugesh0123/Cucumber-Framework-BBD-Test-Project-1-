@@ -27,14 +27,14 @@ public class Hooks extends BaseClass {
 	}
 	
 
-//	@AfterStep
-//	public void failureScreenshot(Scenario scenario) {
-//		if(scenario.isFailed())	{
-//			byte[] photo = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//			scenario.embed(photo, "image/png","error_image");		
-//		}
-//		driver.close();
-//		}
+	@AfterStep
+	public void failureScreenshot(Scenario scenario) {
+		if(scenario.isFailed())	{
+			byte[] photo = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			scenario.embed(photo, "image/png","error_image");		
+		}
+		
+		}
 
 
 }
