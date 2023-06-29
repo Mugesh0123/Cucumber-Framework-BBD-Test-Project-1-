@@ -10,13 +10,13 @@ import test.baseclass.BaseClass;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = "C:\\Users\\subab\\Downloads\\selenium-java-4.9.1\\lib\\git\\Cucumber-Framework-BBD-Test-Project-1-\\src\\test\\resources\\featureFile\\homepage.feature", 
+@CucumberOptions(features = "C:\\Users\\npteliim6\\eclipse-workspace\\new\\Cucumber-Framework-BBD-Test-Project-1-\\src\\test\\resources\\featureFile\\Pugal.feature", 
     glue = {"test.stepdefinition","test.hooks" },
 	 //dryRun = true,
 	strict = true,
 
-		monochrome = true,		
-        tags = "@notebook or @com"
+		monochrome = true		
+   
 //           plugin = {
 //           "html:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\html-report\\reports",
 //      	 "json:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\json-report\\reports1.json",

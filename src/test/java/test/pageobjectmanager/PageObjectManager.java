@@ -3,6 +3,7 @@ package test.pageobjectmanager;
 import test.pojoclass.Computerpage;
 import test.pojoclass.HomePagepojo;
 import test.pojoclass.LoginPojo;
+import test.pojoclass.Pugal2;
 import test.pojoclass.SearchProductElement;
 
 
@@ -12,7 +13,7 @@ public class PageObjectManager {
 	private static SearchProductElement searchProduct;
 	private static HomePagepojo bookspage;
 	private static Computerpage computer; 
-	
+	private static Pugal2 pugal;
 	
 
 	public static LoginPojo getInstanceLoginPojo() {
@@ -30,6 +31,10 @@ public class PageObjectManager {
 	}
 	public static Computerpage getInstanceComputerpage() {
 		return (computer == null) ? computer = new Computerpage() : computer;
+	}
+	public static Pugal2 getInstancePugal() {
+		return (pugal == null) ? pugal = new Pugal2() : pugal;
+		
 	}
 
 }
