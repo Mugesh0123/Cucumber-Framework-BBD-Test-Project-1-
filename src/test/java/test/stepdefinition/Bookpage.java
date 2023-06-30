@@ -5,9 +5,9 @@ import static org.junit.Assert.assertEquals;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import test.pageobjectmanager.PageObjectManager;
-import test.pojoclass.HomePagepojo;
+import test.pojoclass.Bookpojo;
 
-public class HomePageStep extends HomePagepojo {
+public class Bookpage extends Bookpojo {
 	@When("click the books")
 	public void click_the_Books() {
 

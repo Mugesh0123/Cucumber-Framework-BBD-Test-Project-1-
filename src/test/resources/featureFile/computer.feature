@@ -1,7 +1,7 @@
-@com @notebook
+@com 
 Feature: computer module feature
   
-    @com @notebook
+    @com 
   Scenario: Testing the computer modules
     Given user have click the computer
     And user have  click the notebooks

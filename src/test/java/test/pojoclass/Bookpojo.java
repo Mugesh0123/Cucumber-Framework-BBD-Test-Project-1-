@@ -6,8 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import test.baseclass.BaseClass;
 
-public class HomePagepojo extends BaseClass {
-	public HomePagepojo() {
+public class Bookpojo extends BaseClass {
+	public Bookpojo() {
 		PageFactory.initElements(driver, this);
 	}
 
