@@ -17,7 +17,7 @@ public class Hooks extends BaseClass {
 	public void beforeScenario(Scenario scenario){
 		if(driver==null) {
 			lanchBrowser();
-			url("https://demowebshop.tricentis.com/");
+			url(BaseClass.getProperties());
 			waiting(CONSTANT_WAIT_TIME);
 			driver.findElement(By.xpath("//*[text()='Log in']")).click();
 			driver.findElement(By.id("Email")).sendKeys("mugesh1@gmail.com");
