@@ -1,6 +1,10 @@
 package test.baseclass;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.time.Duration;
+import java.util.Properties;
 
 import javax.swing.text.Document;
 
@@ -22,6 +26,19 @@ public class BaseClass {
 	public static WebDriverWait wait;
 	public static WebElement element;
 	public final int CONSTANT_WAIT_TIME = 60;
+	public static Properties properties = new Properties();
+	public static String getProperties() {
+		try (InputStream input = new FileInputStream("C:\\Users\\amala\\eclipse\\Cucumber-Framework-BBD-Test-Project-1-\\properties\\config.properties")) {
+            properties.load(input);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+		
+		String value1 = properties.getProperty("url");
+		return value1;
+		
+	}
 
 	public static void lanchBrowser() {
 

@@ -1,1 +1,0 @@
-file:/C:/Users/amala/eclipse/Cucumber-Framework-BBD-Test-Project-1-/src/test/resources/featureFile/computer.feature:5

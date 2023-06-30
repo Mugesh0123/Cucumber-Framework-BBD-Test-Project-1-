@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.301542">
-    <testcase classname="computer module feature" name="Testing the computer modules" time="18.301542">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.284961">
+    <testcase classname="computer module feature" name="Testing the computer modules" time="15.284961">
         <system-out><![CDATA[Given user have click the computer..........................................passed
 And user have  click the notebooks..........................................passed
 And user have click the  Laptop.............................................passed
@@ -16,53 +16,5 @@ Then user have click the cash...............................................pass
 And user have click the delivery continue...................................passed
 Then user have click the userfinal..........................................passed
 ]]></system-out>
-    </testcase>
-</testsuite>
-implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6d664dd5695cec9380dd19d3bc35cd0a&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)&#13;&#10;&#9;at test.baseclass.BaseClass.buttonClick(BaseClass.java:48)&#13;&#10;&#9;at test.stepdefinition.ComputerStep.user_have_click_the_userfinal(ComputerStep.java:98)&#13;&#10;&#9;at ✽.user have click the userfinal(file:/C:/Users/amala/eclipse/Cucumber-Framework-BBD-Test-Project-1-/src/test/resources/featureFile/computer.feature:19)&#13;&#10;"><![CDATA[Given user have click the computer..........................................passed
-And user have  click the notebooks..........................................passed
-And user have click the  Laptop.............................................passed
-And user have to click the add to cart button...............................passed
-Then user select  the shopping card button..................................passed
-And user have click the terms of shopping...................................passed
-And user click the checkout button..........................................passed
-And user click the billing continue.........................................passed
-And user have click the shipping continue...................................passed
-Then user have click the ground button......................................passed
-And user have click the method continue.....................................passed
-Then user have click the cash...............................................passed
-And user have click the delivery continue...................................passed
-Then user have click the userfinal..........................................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/div[2]/input"}
-  (Session info: chrome=114.0.5735.198)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6d664dd5695cec9380dd19d3bc35cd0a, findElement {using=xpath, value=/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/div[2]/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\amala\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49835}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49835/devtoo..., se:cdpVersion: 114.0.5735.198, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d664dd5695cec9380dd19d3bc35cd0a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at test.baseclass.BaseClass.buttonClick(BaseClass.java:48)
-	at test.stepdefinition.ComputerStep.user_have_click_the_userfinal(ComputerStep.java:98)
-	at ✽.user have click the userfinal(file:/C:/Users/amala/eclipse/Cucumber-Framework-BBD-Test-Project-1-/src/test/resources/featureFile/computer.feature:19)
-]]></failure>
     </testcase>
 </testsuite>
