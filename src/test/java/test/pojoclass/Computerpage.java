@@ -1,6 +1,9 @@
 package test.pojoclass;
 
+import java.sql.Driver;
+
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.v110.page.Page;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -26,7 +29,7 @@ public class Computerpage extends BaseClass {
 	@FindBy(xpath="(//*[text()='Shopping cart'])[1]")
 	private WebElement shopping;
 	
-	@FindBy(xpath ="//*[@id=\"termsofservice\"]")
+	@FindBy(xpath ="//input[contains (@name,'termsofservice')]")
 	private WebElement termsofshopping;
 	
 		
@@ -98,5 +101,7 @@ public class Computerpage extends BaseClass {
 		return deliverycontinue;
 				
 	}
+	 
+	
 	
 }
