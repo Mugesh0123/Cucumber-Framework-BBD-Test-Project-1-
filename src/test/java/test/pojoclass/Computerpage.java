@@ -20,9 +20,10 @@ public class Computerpage extends BaseClass {
 	private WebElement Notebook;
 	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/div[3]/div[2]/input")
 	private WebElement laptop;
-	@FindBy(xpath="//*[@id=\"topcartlink\"]/a")
+	// addtocart button
+	@FindBy(xpath="//input[contains(@id,'add-to-cart')]")
 	private WebElement addtocart;
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/form/div[2]/div[2]/div[3]")
+	@FindBy(xpath="(//*[text()='Shopping cart'])[1]")
 	private WebElement shopping;
 	
 	@FindBy(xpath ="//*[@id=\"termsofservice\"]")

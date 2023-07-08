@@ -1,24 +1,24 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/C:/Users/amala/eclipse/Cucumber-Framework-BBD-Test-Project-1-/src/test/resources/featureFile/computer.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:Pugal.feature");
 formatter.feature({
-  "name": "computer module feature",
+  "name": "To buy a computer",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@com"
+      "name": "@tag"
     }
   ]
 });
 formatter.scenario({
-  "name": "Testing the computer modules",
+  "name": "To buy a computer",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@com"
+      "name": "@tag"
     },
     {
-      "name": "@com"
+      "name": "@file1"
     }
   ]
 });
@@ -26,11 +26,11 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user have click the computer",
-  "keyword": "Given "
+  "name": "click the tab\"COMPUTERS\"",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "ComputerStep.user_have_click_the_computer()"
+  "location": "Pugal.click_the_tab(String)"
 });
 formatter.result({
   "status": "passed"
@@ -42,11 +42,11 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user have  click the notebooks",
+  "name": "click the desktop",
   "keyword": "And "
 });
 formatter.match({
-  "location": "ComputerStep.user_have_click_the_notebooks()"
+  "location": "Pugal.click_the_desktop()"
 });
 formatter.result({
   "status": "passed"
@@ -58,11 +58,11 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user have click the  Laptop",
+  "name": "click the \"Build your own cheap computer\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "ComputerStep.user_have_click_the_Laptop()"
+  "location": "Pugal.click_the(String)"
 });
 formatter.result({
   "status": "passed"
