@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import javax.swing.text.Document;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,6 +28,7 @@ public class BaseClass {
 	public static WebElement element;
 	public final int CONSTANT_WAIT_TIME = 60;
 	public static Properties properties = new Properties();
+	static public Logger log = Logger.getLogger(BaseClass.class);
 	public static String getProperties() {
 		try (InputStream input = new FileInputStream("C:\\Users\\amala\\eclipse\\Cucumber-Framework-BBD-Test-Project-1-\\properties\\config.properties")) {
             properties.load(input);
@@ -41,6 +43,7 @@ public class BaseClass {
 	}
 
 	public static void lanchBrowser() {
+		log.info("browserlanch");
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
