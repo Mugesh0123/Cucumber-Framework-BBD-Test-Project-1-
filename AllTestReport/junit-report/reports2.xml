@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="179.283873">
-    <testcase classname="To test login geeky mart functionality" name="user have to login geeky mart" time="179.283873">
-        <system-out><![CDATA[Given user should be in login page "https://www.geekymart.com/index.php?route=account/login".passed
-When user have to enter username "mugeshmugesh35@gmail.com".................passed
-And user have to enter password "Mugesh@143"................................passed
-Then user should be in home page "Logout"...................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.3114">
+    <testcase classname="To buy a computer" name="To buy a computer" time="15.3114">
+        <system-out><![CDATA[When click the tab"COMPUTERS"...............................................passed
+And click the desktop.......................................................passed
+And click the "Build your own cheap computer"...............................passed
+And user have to click the add to cart button...............................passed
+Then user select  the shopping card button..................................passed
+And user have click the terms of shopping...................................passed
+And user click the checkout button..........................................passed
+And user click the billing continue.........................................passed
+And user have click the shipping continue...................................passed
+Then user have click the ground button......................................passed
+And user have click the method continue.....................................passed
+Then user have click the cash...............................................passed
+And user have click the delivery continue...................................passed
+Then user have click the userfinal..........................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
