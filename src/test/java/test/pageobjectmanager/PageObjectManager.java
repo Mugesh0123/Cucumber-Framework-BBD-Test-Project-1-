@@ -1,10 +1,13 @@
 package test.pageobjectmanager;
 
 import test.pojoclass.Computerpage;
+import test.pojoclass.Electronicspojo;
 import test.pojoclass.Bookpojo;
 import test.pojoclass.LoginPojo;
+import test.pojoclass.Newbookpage;
 import test.pojoclass.Pugal2;
 import test.pojoclass.SearchProductElement;
+
 
 
 public class PageObjectManager {
@@ -14,6 +17,8 @@ public class PageObjectManager {
 	private static Bookpojo bookspage;
 	private static Computerpage computer; 
 	private static Pugal2 pugal;
+	private static Newbookpage newbookpage;
+	private static Electronicspojo electronics;
 	
 
 	public static LoginPojo getInstanceLoginPojo() {
@@ -35,7 +40,16 @@ public class PageObjectManager {
 	public static Pugal2 getInstancePugal() {
 		return (pugal == null) ? pugal = new Pugal2() : pugal;
 	}
-	
+
+	public static Newbookpage getInstanceNewbookspage() {
+
+		return (newbookpage == null) ? newbookpage = new Newbookpage() : newbookpage;
+	}
+
+	public static Electronicspojo getInstanceElectronicspojo() {
+		return (electronics == null) ? electronics = new Electronicspojo() : electronics;
+		
+	}
 	
 	
 

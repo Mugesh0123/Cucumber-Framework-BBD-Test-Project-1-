@@ -1,31 +1,28 @@
 package test.pojoclass;
 
-//import java.sql.Driver;
-
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.devtools.v110.page.Page;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import test.baseclass.BaseClass;
 
-public class Computerpage extends BaseClass {
-
-	public Computerpage() {
-		PageFactory.initElements(driver, this);
+public class Electronicspojo extends BaseClass {
+	
+	public  Electronicspojo() {
+		PageFactory.initElements(driver, this);		
 	}
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[2]/ul[1]/li[2]/a")
-	private WebElement computer;
-	public WebElement getComputer() {
-		return computer;
-	}
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div/div/a/img")
-	private WebElement Notebook;
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/div[3]/div[2]/input")
-	private WebElement laptop;
-	// addtocart button
+	@FindBy(xpath="//body/div[4]/div[1]/div[2]/ul[1]/li[3]/a[1]")
+	private WebElement electronics;
+	
+	@FindBy(xpath="//body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]")
+	private WebElement cellphone;
+	
+	@FindBy(xpath="//a[contains(text(),'Smartphone')]")
+	private WebElement smartphone;
+	
 	@FindBy(xpath="//input[@value='Add to cart']")
 	private WebElement addtocart;
+	
 	@FindBy(xpath="(//*[text()='Shopping cart'])[1]")
 	private WebElement shopping;
 	
@@ -35,6 +32,7 @@ public class Computerpage extends BaseClass {
 		
 	@FindBy(xpath = "//*[@id='checkout']")
 	private WebElement checkout;
+	
 	@FindBy(xpath ="//*[@id=\"billing-buttons-container\"]/input")
 	private WebElement billingcontinue;
 	
@@ -55,24 +53,27 @@ public class Computerpage extends BaseClass {
 	
 	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/div[2]/input")
 	private WebElement userfinal ;
-
-	public WebElement getNotebook() {
-		return Notebook;
-	}
 	
-	public WebElement getUserfinal() {
-		return userfinal;
+	public WebElement getElectronics() {
+		return electronics;
 	}
 
-	public WebElement getLaptop() {
-		return laptop;
+	public WebElement getCellphone() {
+		return cellphone;
 	}
+
+	public WebElement getSmartphone() {
+		return smartphone;
+	}
+
 	public WebElement getAddtocart() {
 		return addtocart;
 	}
+
 	public WebElement getShopping() {
 		return shopping;
 	}
+
 	public WebElement getTermsofshopping() {
 		return termsofshopping;
 	}
@@ -80,28 +81,33 @@ public class Computerpage extends BaseClass {
 	public WebElement getCheckout() {
 		return checkout;
 	}
+
 	public WebElement getBillingcontinue() {
 		return billingcontinue;
 	}
+
 	public WebElement getShippingcontinue() {
 		return shippingcontinue;
 	}
-	
-	public WebElement getMethodcontinue() {
-		return methodcontinue;
-	}
+
 	public WebElement getGroundbutton() {
 		return groundbutton;
 	}
+
+	public WebElement getMethodcontinue() {
+		return methodcontinue;
+	}
+
 	public WebElement getCash() {
 		return cash;
 	}
 
 	public WebElement getDeliverycontinue() {
 		return deliverycontinue;
-				
 	}
-	 
-	
-	
+
+	public WebElement getUserfinal() {
+		return userfinal;
+	}
+
 }

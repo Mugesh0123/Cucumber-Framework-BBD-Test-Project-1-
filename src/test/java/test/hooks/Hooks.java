@@ -7,9 +7,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 
-import io.cucumber.core.api.Scenario;
+//import io.cucumber.core.api.Scenario;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
+import io.cucumber.java.Scenario;
 import test.baseclass.BaseClass;
 
 public class Hooks extends BaseClass {
@@ -31,7 +32,7 @@ public class Hooks extends BaseClass {
 	public void failureScreenshot(Scenario scenario) {
 		if(scenario.isFailed())	{
 			byte[] photo = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-			scenario.embed(photo, "image/png","error_image");		
+			//scenario.embed(photo, "image/png","error_image");		
 		}
 		
 		}
