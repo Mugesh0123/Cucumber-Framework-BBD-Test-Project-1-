@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import javax.swing.text.Document;
 
+import org.apache.logging.log4j.Logger;
 //import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

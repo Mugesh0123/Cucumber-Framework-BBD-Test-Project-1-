@@ -17,9 +17,9 @@ public class Electronicspojo extends BaseClass {
 	@FindBy(xpath="//body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]")
 	private WebElement cellphone;
 	
-	@FindBy(xpath="//a[contains(text(),'Smartphone')]")
+	@FindBy(xpath="//a[contains(text(),'Used phone')]")
 	private WebElement smartphone;
-	
+
 	@FindBy(xpath="//input[@value='Add to cart']")
 	private WebElement addtocart;
 	
