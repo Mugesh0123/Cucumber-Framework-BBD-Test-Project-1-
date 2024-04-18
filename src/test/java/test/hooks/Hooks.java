@@ -1,12 +1,15 @@
 package test.hooks;
 
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-
 //import io.cucumber.core.api.Scenario;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
@@ -31,8 +34,17 @@ public class Hooks extends BaseClass {
 	@AfterStep
 	public void failureScreenshot(Scenario scenario) {
 		if(scenario.isFailed())	{
-			byte[] photo = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			TakesScreenshot photo = ((TakesScreenshot) driver);
+			File src=photo.getScreenshotAs(OutputType.FILE);
+			File trgt=new File(".\\screenshots\\failedimge.png");
+			try {
+				FileUtils.copyFile(src, trgt);
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
 			//scenario.embed(photo, "image/png","error_image");		
+			
 		}
 		
 		}

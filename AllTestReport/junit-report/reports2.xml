@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="45.123" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Electronics feature implemented" name="To testing the electronics modules" time="44.758">
+<testsuite name="Cucumber" time="141.732" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Electronics feature implemented" name="To testing the electronics modules" time="140.608">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains (@name,'termsofservice')]&quot;}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29d5e65add4c29fcc7ff1be709f44f23, findElement {value=//input[contains (@name,'termsofservice')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\PRMEGA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61374/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29d5e65add4c29fcc7ff1be709f44f23">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains (@name,'termsofservice')]"}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29d5e65add4c29fcc7ff1be709f44f23, findElement {value=//input[contains (@name,'termsofservice')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\PRMEGA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61374/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29d5e65add4c29fcc7ff1be709f44f23
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at test.baseclass.BaseClass.buttonClick(BaseClass.java:69)
+	at test.stepdefinition.Electronics.user_click_the_terms_of_shopping(Electronics.java:29)
+	at ✽.user  click the terms of shopping(file:///C:/Users/P%20R%20MEGAVARSHINI/git/Cucumber-Framework-BBD-Test-Project-1-/src/test/resources/featureFile/Electronics.feature:10)
+]]>
+</failure>
 <system-out><![CDATA[
 Given user click the electronics option.....................................passed
 And user have click the cellphone...........................................passed
 And click the smartphone option.............................................passed
 And user have to click the add to cart button...............................passed
 Then select  the shopping card button.......................................passed
-And user  click the terms of shopping.......................................passed
-And user click  checkout button.............................................passed
-And user click  billing continue............................................passed
-And user  click the shipping continue.......................................passed
-Then user click the ground button...........................................passed
-And user click the method continue..........................................passed
-Then user have click  cash..................................................passed
-And user have click  delivery continue......................................passed
-Then user click the userfinal...............................................passed
+And user  click the terms of shopping.......................................failed
+And user click  checkout button.............................................skipped
+And user click  billing continue............................................skipped
+And user  click the shipping continue.......................................skipped
+Then user click the ground button...........................................skipped
+And user click the method continue..........................................skipped
+Then user have click  cash..................................................skipped
+And user have click  delivery continue......................................skipped
+Then user click the userfinal...............................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>
