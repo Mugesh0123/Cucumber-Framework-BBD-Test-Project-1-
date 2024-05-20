@@ -14,7 +14,7 @@ glue = {"test.stepdefinition", "test.hooks" },
 //strict = true,
 
 //monochrome = true,
-tags = "@elec",
+tags = "@Jewel",
 plugin = {
 				"json:C:\\Users\\P R MEGAVARSHINI\\git\\Cucumber-Framework-BBD-Test-Project-1-\\AllTestReport\\json-report\\reports1.json",
 				"junit:C:\\Users\\P R MEGAVARSHINI\\git\\Cucumber-Framework-BBD-Test-Project-1-\\AllTestReport\\junit-report\\reports2.xml"

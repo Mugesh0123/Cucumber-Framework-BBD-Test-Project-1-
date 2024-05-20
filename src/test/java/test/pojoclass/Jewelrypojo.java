@@ -1,37 +1,38 @@
 package test.pojoclass;
 
-//import java.sql.Driver;
-
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.devtools.v110.page.Page;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import test.baseclass.BaseClass;
 
-public class Computerpage extends BaseClass {
-
-	public Computerpage() {
+public class Jewelrypojo extends BaseClass{
+	
+	public  Jewelrypojo() {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[2]/ul[1]/li[2]/a")
-	private WebElement computer;
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[2]/div/div/a/img")
-	private WebElement Notebook;
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/div[3]/div[2]/input")
-	private WebElement laptop;
-	// addtocart button
-	@FindBy(xpath="//input[@value='Add to cart']")
+	
+	@FindBy(xpath="//ul[@class='top-menu']//a[normalize-space()='Jewelry']")
+	private WebElement Jewelry;
+	
+	@FindBy(xpath= "//h2[@class='product-title']//a[normalize-space()='Black & White Diamond Heart']")
+	private WebElement BwHeart;
+	
+	@FindBy(xpath="//input[@id='add-to-cart-button-14']")
 	private WebElement addtocart;
-	@FindBy(xpath="(//*[text()='Shopping cart'])[1]")
-	private WebElement shopping;
 	
-	@FindBy(xpath ="//input[contains (@name,'termsofservice')]")
-	private WebElement termsofshopping;
+	@FindBy(xpath= "//li[@id='topcartlink']//a[@class='ico-cart']")
+	private WebElement shoppingcart;
 	
-		
-	@FindBy(xpath = "//*[@id='checkout']")
+	@FindBy(xpath= "//input[@name='itemquantity4259127']")
+	private WebElement quantity;
+	
+	@FindBy(xpath= "//input[@id='termsofservice']")
+	private WebElement termsofservice;
+	
+	@FindBy(xpath= "//button[@id='checkout']")
 	private WebElement checkout;
+	
 	@FindBy(xpath ="//*[@id=\"billing-buttons-container\"]/input")
 	private WebElement billingcontinue;
 	
@@ -53,57 +54,60 @@ public class Computerpage extends BaseClass {
 	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/div[2]/input")
 	private WebElement userfinal ;
 
-	
-	public WebElement getComputer() {
-		return computer;
-	}
-	
-	public WebElement getNotebook() {
-		return Notebook;
-	}
-	
-	public WebElement getUserfinal() {
-		return userfinal;
+	public WebElement getJewelry() {
+		return Jewelry;
 	}
 
-	public WebElement getLaptop() {
-		return laptop;
+	public WebElement getBwHeart() {
+		return BwHeart;
 	}
+
 	public WebElement getAddtocart() {
 		return addtocart;
 	}
-	public WebElement getShopping() {
-		return shopping;
+
+	public WebElement getShoppingcart() {
+		return shoppingcart;
 	}
-	public WebElement getTermsofshopping() {
-		return termsofshopping;
+
+	public WebElement getQuantity() {
+		return quantity;
+	}
+
+	public WebElement getTermsofservice() {
+		return termsofservice;
 	}
 
 	public WebElement getCheckout() {
 		return checkout;
 	}
+
 	public WebElement getBillingcontinue() {
 		return billingcontinue;
 	}
+
 	public WebElement getShippingcontinue() {
 		return shippingcontinue;
 	}
-	
-	public WebElement getMethodcontinue() {
-		return methodcontinue;
-	}
+
 	public WebElement getGroundbutton() {
 		return groundbutton;
 	}
+
+	public WebElement getMethodcontinue() {
+		return methodcontinue;
+	}
+
 	public WebElement getCash() {
 		return cash;
 	}
 
 	public WebElement getDeliverycontinue() {
 		return deliverycontinue;
-				
 	}
-	 
-	
-	
+
+	public WebElement getUserfinal() {
+		return userfinal;
+	}
+
 }
