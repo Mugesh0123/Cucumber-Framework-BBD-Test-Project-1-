@@ -12,6 +12,7 @@ public class Jewelrypojo extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 	
+	
 	@FindBy(xpath="//ul[@class='top-menu']//a[normalize-space()='Jewelry']")
 	private WebElement Jewelry;
 	

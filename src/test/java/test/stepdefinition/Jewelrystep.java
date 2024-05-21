@@ -9,6 +9,8 @@ public class Jewelrystep extends Jewelrypojo{
 
 	
 
+	
+	
 @Given("User click the jewelry option")
 public void user_click_the_jewelry_option() {
 	buttonClick(PageObjectManager.getInstanceJewelrypojo().getJewelry());
