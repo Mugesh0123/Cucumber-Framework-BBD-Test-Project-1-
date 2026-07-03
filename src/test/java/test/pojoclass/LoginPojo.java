@@ -11,15 +11,27 @@ public class LoginPojo extends BaseClass{
 	public LoginPojo() {
 		PageFactory.initElements(driver, this);
 	}
+	 // login option
+	@FindBy(className = "ico-login")
+	private WebElement loginButton;
 	
-	@FindBy(xpath ="//input[@id='input-email']")
+	// username field
+	@FindBy(id = "Email")
 	private WebElement userName;
 	
-	@FindBy(xpath ="//input[@id='input-password']")
+	// password field
+	@FindBy(xpath ="//*[@id='Password']")
 	private WebElement passWord;
 	
-	@FindBy(xpath ="//input[@type='submit']")
+	// login submit button
+	@FindBy(xpath ="//*[@class='button-1 login-button']")
 	private WebElement login;
+
+	
+	// logout button
+	@FindBy(xpath="//*[text()='Log out']")
+	private WebElement logOutButton;	
+	
 	
 	public WebElement getUserName() {
 		return userName;
@@ -30,6 +42,12 @@ public class LoginPojo extends BaseClass{
 
 	public WebElement getLogin() {
 		return login;
+	}
+	public WebElement getLoginButton() {
+		return loginButton;
+	}
+	public WebElement getLogOutButton() {
+		return logOutButton;
 	}
 	
 	

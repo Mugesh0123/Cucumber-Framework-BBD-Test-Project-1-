@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <script src="js/jquery.min.js"></script>
@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 
 
-  
+
 <title>Cucumber Reports  - Steps Overview</title>
 
 </head>
@@ -51,10 +51,10 @@ $(document).ready(function() {
     <div class="collapse navbar-collapse">
       <p class="navbar-text navbar-left">Cucumber Report</p>
       <ul class="nav navbar-nav navbar-right">
-                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
-                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
@@ -63,35 +63,35 @@ $(document).ready(function() {
 
 <div class="container-fluid">
   <div class="col-md-5 col-md-offset-1">
-    
+
 <table class="table table-bordered" id="build-info">
   <thead>
     <tr>
       <th>Project</th>
-            <th>Date</th>
+      <th>Date</th>
     </tr>
   </thead>
   <tbody>
     <tr class="info">
       <td>jvmreports</td>
-            <td>19 Dec 2022, 01:22</td>
+      <td>03 Jul 2026, 08:42</td>
     </tr>
   </tbody>
 </table>
 
   </div>
   <div class="col-md-3 col-md-offset-2">
-      </div>
+  </div>
 </div>
 
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
     <h2>Steps Statistics</h2>
-          <p>The following graph shows step statistics for this build. Below list is based on results.
+      <p>The following graph shows step statistics for this build. Below list is based on results.
  step does not provide information about result then is not listed below.
  Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
-      </div>
+  </div>
 </div>
 
 <div class="container-fluid" id="report">
@@ -111,47 +111,63 @@ $(document).ready(function() {
         </thead>
 
         <tbody>
-                      <tr>
-              <td class="location">StepDefinition.user_have_to_enter_password(String)</td>
+            <tr>
+              <td class="location">test.stepdefinition.Login.user_click_login_button()</td>
               <td>1</td>
-              <td class="duration" data-value="3944032100">3.944</td>
-              <td class="duration" data-value="3944032100">3.944</td>
-              <td class="duration" data-value="3944032100">3.944</td>
+              <td class="duration" data-value="567700200">0.567</td>
+              <td class="duration" data-value="567700200">0.567</td>
+              <td class="duration" data-value="567700200">0.567</td>
               <td class="passed">100.00%</td>
             </tr>
-                      <tr>
-              <td class="location">StepDefinition.user_have_to_enter_username(String)</td>
+            <tr>
+              <td class="location">test.stepdefinition.Login.user_enter_password(java.lang.String)</td>
               <td>1</td>
-              <td class="duration" data-value="3944902400">3.944</td>
-              <td class="duration" data-value="3944902400">3.944</td>
-              <td class="duration" data-value="3944902400">3.944</td>
+              <td class="duration" data-value="154080500">0.154</td>
+              <td class="duration" data-value="154080500">0.154</td>
+              <td class="duration" data-value="154080500">0.154</td>
               <td class="passed">100.00%</td>
             </tr>
-                      <tr>
-              <td class="location">StepDefinition.user_should_be_in_home_page(String)</td>
+            <tr>
+              <td class="location">test.stepdefinition.Login.user_enter_username(java.lang.String)</td>
               <td>1</td>
-              <td class="duration" data-value="159460800">0.159</td>
-              <td class="duration" data-value="159460800">0.159</td>
-              <td class="duration" data-value="159460800">0.159</td>
+              <td class="duration" data-value="119854800">0.119</td>
+              <td class="duration" data-value="119854800">0.119</td>
+              <td class="duration" data-value="119854800">0.119</td>
               <td class="passed">100.00%</td>
             </tr>
-                      <tr>
-              <td class="location">StepDefinition.user_should_be_in_login_page(String)</td>
+            <tr>
+              <td class="location">test.stepdefinition.Login.user_have_to_click_login_option()</td>
               <td>1</td>
-              <td class="duration" data-value="171162546700">2:51.162</td>
-              <td class="duration" data-value="171162546700">2:51.162</td>
-              <td class="duration" data-value="171162546700">2:51.162</td>
+              <td class="duration" data-value="602050900">0.602</td>
+              <td class="duration" data-value="602050900">0.602</td>
+              <td class="duration" data-value="602050900">0.602</td>
               <td class="passed">100.00%</td>
             </tr>
-                  </tbody>
+            <tr>
+              <td class="location">test.stepdefinition.Login.user_should_be_in_login_page(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4825027500">4.825</td>
+              <td class="duration" data-value="4825027500">4.825</td>
+              <td class="duration" data-value="4825027500">4.825</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">test.stepdefinition.Login.user_should_be_in_webshop_home_page(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="33458600">0.033</td>
+              <td class="duration" data-value="33458600">0.033</td>
+              <td class="duration" data-value="33458600">0.033</td>
+              <td class="failed">0.00%</td>
+            </tr>
+        </tbody>
 
         <tfoot class="total">
           <tr>
-            <td>4</td>
-            <td>4</td>
-            <td class="duration">44.802</td>
-            <td class="duration">2:51.162</td>
-            <td class="duration">2:59.210</td>
+            <td>6</td>
+            <td>6</td>
+            <td class="duration">1.050</td>
+            <td class="duration">4.825</td>
+            <td class="duration">6.302</td>
             <td>Totals</td>
           </tr>
         </tfoot>

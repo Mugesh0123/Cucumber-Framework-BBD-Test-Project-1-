@@ -1,21 +1,53 @@
 package test.hooks;
 
-import org.junit.After;
-import org.junit.Before;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+//import io.cucumber.core.api.Scenario;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.BeforeStep;
+import io.cucumber.java.Scenario;
 import test.baseclass.BaseClass;
-import test.runner.RunnerClass;
 
-public class Hooks extends RunnerClass {
-	@Before
-	public void setUp() {
-	System.out.println("---hi----");
+public class Hooks extends BaseClass {
+	@BeforeStep
+	public void beforeScenario(Scenario scenario){
+		if(driver==null) {
+			lanchBrowser();
+			url(BaseClass.getProperties());
+			waiting(CONSTANT_WAIT_TIME);
+			driver.findElement(By.xpath("//*[text()='Log in']")).click();
+			driver.findElement(By.id("Email")).sendKeys("mugesh1@gmail.com");
+			driver.findElement(By.xpath("//*[@id='Password']")).sendKeys("Mugesh@1");
+			driver.findElement(By.xpath("//*[@class='button-1 login-button']")).click();
+		}	
 	}
 	
-	@After
-	public void setDown() {
-		//jvmReportGeneration();
-		driver.close();
-	}
+
+	@AfterStep
+	public void failureScreenshot(Scenario scenario) {
+		if(scenario.isFailed())	{
+			TakesScreenshot photo = ((TakesScreenshot) driver);
+			File src=photo.getScreenshotAs(OutputType.FILE);
+			File trgtDir = new File(System.getProperty("user.dir"), "screenshots");
+			if (!trgtDir.exists()) trgtDir.mkdirs();
+			File trgt=new File(trgtDir, "failedimge.png");
+			try {
+				FileUtils.copyFile(src, trgt);
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
+			//scenario.embed(photo, "image/png","error_image");		
+			
+		}
+		
+		}
+
 
 }

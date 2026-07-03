@@ -1,6 +1,5 @@
 package test.runner;
 
-import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
@@ -9,20 +8,23 @@ import io.cucumber.junit.CucumberOptions;
 import test.baseclass.BaseClass;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\muges\\eclipse-workspace\\test\\src\\test\\resources\\featureFile\\LoginGeekyMart.feature",
-           glue = {"test.stepdefinition","test.hooks"},
-           dryRun = false,
-           monochrome = true,
-           strict=true ,
-           plugin = {
-           "html:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\html-report\\reports",
-      	   "json:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\json-report\\reports1.json",
-    	   "junit:C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\junit-report\\reports2.xml",
-    	   "rerun:C:\\Users\\muges\\eclipse-workspace\\test\\src\\test\\resources\\rerun\\rerun.txt"     	   
-           } )
-public class RunnerClass extends BaseClass {	
+@CucumberOptions(
+		features = "src/test/resources/featureFile",
+		glue = { "test.stepdefinition", "test.hooks" },
+		dryRun = false,
+		//strict = true,
+		//monochrome = true,
+		tags = "@login1",
+		plugin = {
+				"json:AllTestReport/json-report/reports1.json",
+				"junit:AllTestReport/junit-report/reports2.xml"
+		}
+)
+public class RunnerClass extends BaseClass {
 	@AfterClass
-   public static void jvmReportGeneration() {
-	   JVMReport.jvmreport("C:\\Users\\muges\\eclipse-workspace\\test\\AllTestReport\\json-report\\reports1.json");
-    }	
+	public static void jvmReportGeneration() {
+		String reportPath = System.getProperty("user.dir") + "/AllTestReport/json-report/reports1.json";
+		JVMReport.jvmreport(reportPath);
+	}
 }
+ 
