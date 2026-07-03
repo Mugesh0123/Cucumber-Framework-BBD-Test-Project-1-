@@ -7,8 +7,6 @@ import java.io.InputStream;
 import java.time.Duration;
 import java.util.Properties;
 
-import org.apache.logging.log4j.Logger;
-//import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +25,7 @@ public class BaseClass {
 	public static WebElement element;
 	public static final int CONSTANT_WAIT_TIME = 60;
 	public static Properties properties = new Properties();
-	//static public Logger log = Logger.getLogger(BaseClass.class);
+	
 	public static String getProperties() {
 		// Load properties from project-relative properties/config.properties
 		String userDir = System.getProperty("user.dir");
@@ -61,9 +59,6 @@ public class BaseClass {
 		driver.get(url);
 	}
 
-
-	
-
 	public static void fillTheTextBox(WebElement element, String text) {
 		element.sendKeys(text);
 	}
@@ -71,9 +66,7 @@ public class BaseClass {
 	public static void buttonClick(WebElement element) {
 		element.click();
 	}
-	
-	
-	
+
 	public static void getElementText(WebElement element) {
 		element.getText();
 	}
@@ -112,8 +105,7 @@ public class BaseClass {
 		Actions act = new Actions(driver);
 		act.moveToElement(e1);
 	}
-	
-	
+
 	public static void implicityWait(int time) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(time));
 	}
