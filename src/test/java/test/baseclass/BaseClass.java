@@ -1,12 +1,11 @@
 package test.baseclass;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.Duration;
 import java.util.Properties;
-
-import javax.swing.text.Document;
 
 import org.apache.logging.log4j.Logger;
 //import org.apache.log4j.Logger;
@@ -19,35 +18,40 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.cucumber.cucumberexpressions.Argument;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseClass {
 	private static final String JavascriptExecutor = null;
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	public static WebElement element;
-	public final int CONSTANT_WAIT_TIME = 60;
+	public static final int CONSTANT_WAIT_TIME = 60;
 	public static Properties properties = new Properties();
 	//static public Logger log = Logger.getLogger(BaseClass.class);
 	public static String getProperties() {
-		try (InputStream input = new FileInputStream("C:\\Users\\P R MEGAVARSHINI\\git\\Cucumber-Framework-BBD-Test-Project-1-\\properties\\config.properties")) {
-            properties.load(input);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+		// Load properties from project-relative properties/config.properties
+		String userDir = System.getProperty("user.dir");
+		File propFile = new File(userDir + File.separator + "properties" + File.separator + "config.properties");
+		try (InputStream input = new FileInputStream(propFile)) {
+			properties.load(input);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-		
 		String value1 = properties.getProperty("url");
 		return value1;
-		
 	}
 
 	public static void lanchBrowser() {
-		//log.info("browserlanch");
-
-		driver = new ChromeDriver();
+		// Ensure driver binaries are available and start Chrome
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		// add any default options here if needed
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+		// initialize explicit wait instance
+		wait = new WebDriverWait(driver, Duration.ofSeconds(CONSTANT_WAIT_TIME));
 	}
 
 	public static void url(String url) {
