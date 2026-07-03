@@ -5,11 +5,9 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebElement;
 //import io.cucumber.core.api.Scenario;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
@@ -36,7 +34,9 @@ public class Hooks extends BaseClass {
 		if(scenario.isFailed())	{
 			TakesScreenshot photo = ((TakesScreenshot) driver);
 			File src=photo.getScreenshotAs(OutputType.FILE);
-			File trgt=new File(".\\screenshots\\failedimge.png");
+			File trgtDir = new File(System.getProperty("user.dir"), "screenshots");
+			if (!trgtDir.exists()) trgtDir.mkdirs();
+			File trgt=new File(trgtDir, "failedimge.png");
 			try {
 				FileUtils.copyFile(src, trgt);
 			} catch (IOException e) {
